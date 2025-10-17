@@ -14,7 +14,7 @@ public class EnterPoint : MonoBehaviour
 
     /*/
      * Привет, я тут был!
-     * Hello
+     * Попытка 2
      /*/
 
     void Start()
