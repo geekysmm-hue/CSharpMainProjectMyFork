@@ -5,7 +5,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controller/BotController.cs">
     <Files>
       <File FileName="Assets/Scripts/EnterPoint.cs" />
-      <File FileName="Assets/Scripts/Controller/BotController.cs" Line="12" Column="16" />
+      <File FileName="Assets/Scripts/Controller/BotController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +13,9 @@
           <Node name="CSharpMainProjectMyFork" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Controller" expanded="True" />
+                <Node name="Controller" expanded="True">
+                  <Node name="BotController.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
