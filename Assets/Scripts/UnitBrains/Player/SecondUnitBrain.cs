@@ -27,9 +27,12 @@ namespace UnitBrains.Player
 
             if (t < overheatTemperature)
             {
-                
-                for (int i = 1; i <= t; i++)
+                int projectileCount = Mathf.Max(1, t);
+
+                for (int i = 0; i <= projectileCount; i++)
                 {
+                    var Projectile = CreateProjectile(forTarget);
+
                     AddProjectileToList(projectile, intoList); 
                     
                 }
