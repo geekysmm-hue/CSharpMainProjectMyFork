@@ -23,14 +23,17 @@ namespace UnitBrains.Player
             AddProjectileToList(projectile, intoList);
 
             int t = GetTemperature();
+             
 
             if (t < overheatTemperature)
             {
+                
                 for (int i = 1; i <= t; i++)
                 {
-
-                    IncreaseTemperature();
+                    AddProjectileToList(projectile, intoList); 
+                    
                 }
+                IncreaseTemperature();
             }
             
 
