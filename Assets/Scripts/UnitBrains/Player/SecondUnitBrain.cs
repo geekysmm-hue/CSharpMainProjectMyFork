@@ -21,6 +21,19 @@ namespace UnitBrains.Player
             ///////////////////////////////////////           
             var projectile = CreateProjectile(forTarget);
             AddProjectileToList(projectile, intoList);
+
+            int t = GetTemperature();
+
+            if (t < overheatTemperature)
+            {
+                for (int i = 1; i <= t; i++)
+                {
+
+                    IncreaseTemperature();
+                }
+            }
+            
+
             ///////////////////////////////////////
         }
 
