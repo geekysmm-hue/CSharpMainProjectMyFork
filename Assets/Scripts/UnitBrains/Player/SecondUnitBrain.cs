@@ -23,21 +23,18 @@ namespace UnitBrains.Player
             AddProjectileToList(projectile, intoList);
 
             int t = GetTemperature();
-             
 
             if (t < overheatTemperature)
             {
-                int projectileCount = Mathf.Max(1, t);
-
-                for (int i = 0; i <= projectileCount; i++)
+                for (int i = 1; i <= t; i++)
                 {
-                    var Projectile = CreateProjectile(forTarget);
-
-                    AddProjectileToList(projectile, intoList); 
+                    projectile = CreateProjectile(forTarget);
+                    AddProjectileToList(projectile, intoList);
                     
                 }
                 IncreaseTemperature();
             }
+           
             
 
             ///////////////////////////////////////
